@@ -14,6 +14,27 @@ public class Regular extends Vehicles {
         this.howManyPassengers = howManyPassengers;
     }
 
+    public double exhaust()
+    {
+        return super.exhaust() + (howManyPassengers * 100);
+    }
+
+    public boolean hitchhikers()
+    {
+        if (this.howManyPassengers > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+     public void noise()
+     {
+         System.out.println("Beep Beep");
+     }
+
     @Override
     public String toString() {
         return "Regular{" +

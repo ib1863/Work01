@@ -14,6 +14,28 @@ public class Cart extends Light{
         this.chargeTime = chargeTime;
     }
 
+    public boolean hitchhikers()
+    {
+        if (super.thereIsManoa == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public double exhaust()
+    {
+        if (super.thereIsManoa == true)
+        {
+            return super.exhaust() + 300;
+        }
+        else {
+            return super.exhaust();
+        }
+    }
+
     @Override
     public String toString() {
         return "Cart{" +

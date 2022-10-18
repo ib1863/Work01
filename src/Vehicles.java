@@ -1,4 +1,4 @@
-public class Vehicles {
+public abstract class Vehicles {
     protected int carId;
     protected int carAge;
     protected int wheelsCount;
@@ -11,6 +11,11 @@ public class Vehicles {
         this.wheelsCount = wheelsCount;
         this.hegeOrKidon = hegeOrKidon;
         this.mezahaminForMinute = mezahaminForMinute;
+    }
+
+    public double exhaust()
+    {
+        return this.mezahaminForMinute * 60;
     }
 
     public int getCarId() {

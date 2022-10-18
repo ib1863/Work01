@@ -14,6 +14,11 @@ public class Heavy extends Vehicles{
         this.howManyCarsToLimshoch = howManyCarsToLimshoch;
     }
 
+    public double exhaust()
+    {
+        return super.exhaust() + (500 * howManyCarsToLimshoch);
+    }
+
     @Override
     public String toString() {
         return "Heavy{" +

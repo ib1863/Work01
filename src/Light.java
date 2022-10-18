@@ -14,6 +14,8 @@ public class Light extends Vehicles{
         this.thereIsManoa = thereIsManoa;
     }
 
+
+
     @Override
     public String toString() {
         return "Light{" +
